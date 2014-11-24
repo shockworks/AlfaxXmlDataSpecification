@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders_status>
+    <order>
+        <order_number>201400215</order_number>
+        <status>2</status>
+        <delivery_track_code>121121445787</delivery_track_code> 
+    </order>
+</orders_status>

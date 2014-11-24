@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: no XML declaration present -->
+<!-- 
+Import produktů do systému Alfax 
+
+@version 1.0
+-->
+<!-- Root element pro import produktů -->
+<products> 
+    <!-- Objekt produkt -->
+    <product id="121112112">
+        <!-- POVINNÉ: Název produktu [varchar:255] -->
+        <name>Název produktu</name>     
+        <!-- Úplný popis produktu [text] -->    
+        <full_html_description>Úplný popis produktu formátovaný jako HTML. Popis může obsahovat odkazy, nebo obrázky - ty musejí být k dispozici na veřejné URL.</full_html_description>
+        <!-- Metadata klíčová slova produktu [text] -->    
+        <meta_keywords>boty, obuv</meta_keywords>
+        <!-- Metadata popis produktu [text] -->    
+        <meta_description>Popis (meta)</meta_description>
+        <!-- Sazba DPH u produktu [float] --> 
+        <vat>21</vat>
+        <!-- Prodejní cena s DPH u produktu [float] --> 
+        <prices>
+          <price>999</price> <!-- defaultni cena produktu s DPH -->
+          <price for="eshop.sk">14.99</price> <!-- cena produktu pro dalsi varianty eshopu (jazykove i jine) s DPH -->
+          <price for="eshop.pl">34.99</price>
+        </prices>
+        <!-- Doporučená cena s DPH u produktu [float] --> 
+        <prices_recommended>
+          <price_recommended>999</price_recommended> <!-- defaultni doporucena cena produktu s DPH -->
+          <price_recommended for="eshop.sk">14.99</price_recommended> <!-- cena produktu pro dalsi varianty eshopu (jazykove i jine) s DPH -->
+          <price_recommended for="eshop.pl">34.99</price_recommended>
+        </prices_recommended>
+        <!-- Katalogové číslo produktu [varchar:50] --> 
+        <catalog_number>123456</catalog_number>
+        <!-- EAN produktu [int:12] --> 
+        <ean>912546789123</ean>
+        <!-- Skladová dostupnost u produktu určená počtem dnů do expedice (-1 je zboží nedostupné) [int:2] -->
+        <stock_availability>0</stock_availability>
+        <!-- Varianty produktu --> 
+        <variants>
+            <!-- Objekt varianty --> 
+            <variant id="45444554" order="1">
+                <!-- Označení varianty [varchar:255] --> 
+                <name>L</name>
+                <!-- Počet kusů na skladu [int:6] --> 
+                <quantity_in_stock>0</quantity_in_stock>
+                <!-- Katalogové číslo varianty [varchar:50] --> 
+                <catalog_number>123456-1</catalog_number>
+                <!-- EAN varianty [int:12] --> 
+                <ean>912546789125</ean>
+            </variant>
+        </variants>
+        <!-- Galerie produktu (galerie mohou být vytvářeny automaticky pro produkt systémem Alfax) --> 
+        <galleries>
+            <!-- Objekt galerie -->
+            <gallery implementation_name="fotogalerie">
+                <!-- Soubory galerie -->
+                <files>
+                    <!-- Soubor galerie --> 
+                    <file src="ftp://www.xyz.cz/files/obr001.jpg" id="obr001" order="1" />
+                    <file src="ftp://www.xyz.cz/files/obr002.jpg" id="obr001" order="2" />
+                </files>
+            </gallery>
+        </galleries>
+        <!-- Parametry produktu --> 
+        <parameters>
+            <!-- Objekt parametru s implementačním názvem "color" --> 
+            <parameter implementation_name="color">
+                <!-- Hodnota parametru [varchar:255] --> 
+                <value>Červená</value>
+                <value>Zelená</value>
+            </parameter>
+            <parameter implementation_name="technical_description">
+                <value>Pánská obuv flexibl, svršek kůže, podšívka kůže</value>
+            </parameter>
+        </parameters>
+        <!-- Aktivní štítky produktu --> 
+        <lists> 
+            <!-- Aktivní štítek produktu --> 
+            <list implementation_name="action_product" /> 
+            <list implementation_name="new_product" />
+        </lists>
+        <!-- Příslušenství k produktu --> 
+        <accessories>
+            <!-- Identifikátor produktu, který je příslušný k produktu v tagu <product> --> 
+            <accessory id="11111" /> <!-- Prislusenstvi je vyuzito k provazani barevnych variant -->
+            <accessory id="11112" />
+        </accessories>
+    </product>
+</products>

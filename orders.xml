@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+    <order>
+        <id>96544478</id>
+        <order_number>201401001</order_number>
+        <date_ordered>2014-08-08 11:46:41</date_ordered>
+        <status>1</status>
+        <user_name>Jan</user_name>
+        <user_surname>Stoklasa</user_surname>
+        <user_email>jan.stoklasa@email-test.cz</user_email>
+        <user_phone>111222333</user_phone>
+        <user_company>Testovací s.r.o.</user_company>
+        <user_street>Novácká 16</user_street>
+        <user_city>Plzeň</user_city>
+        <user_zipcode>12064</user_zipcode>
+        <user_country>Česká republika</user_country>
+        <user_ic>24411333</user_ic>
+        <user_dic>CZ24411333</user_dic>
+        <another_delivery_address>1</another_delivery_address>
+        <delivery_name_surname>Jan Stoklasa</delivery_name_surname>
+        <delivery_company>Testovací s.r.o.</delivery_company>
+        <delivery_phone>222333444</delivery_phone>
+        <delivery_street>Doručovací 16</delivery_street>
+        <delivery_city>Praha</delivery_city>
+        <delivery_zipcode>12000</delivery_zipcode>
+        <delivery_country>Česká republika</delivery_country>
+        <note>Objednávku prosím doručte co nejdříve.</note>
+        <items>
+            <item>
+                <product_name>COQUI 1322 Coral</product_name>
+                <product_id>100001</product_id>
+                <variant_name>black</variant_name>
+                <variant_id>99999999</variant_id>
+                <catalog_number>JOOI JB 1322/B</catalog_number>
+                <ean>123456789123</ean>
+                <price>142.78</price>
+                <vat>21</vat>
+                <amount>1</amount>
+            </item>
+        </items>
+        <delivery_price>99</delivery_price>
+        <delivery_vat>21</delivery_vat>         
+        <delivery_name>Česká pošta</delivery_name>
+        <payment_name>Platba kartou</payment_name>
+    </order>
+</orders>

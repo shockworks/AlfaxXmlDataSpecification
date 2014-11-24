@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+/**
+* Určen pro export.
+*/
+
+<parameters>
+    <parameter>
+        <name>Název parametru</name>
+        <implementation_name></implementation_name>
+        <type>select</type>
+        <values>
+            <value id=""></value>
+        </values>
+    </parameter>
+</parameters>
